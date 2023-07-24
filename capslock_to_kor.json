@@ -1,0 +1,25 @@
+{
+    "title": "Use capslock as kor-eng switch",
+    "rules": [
+        {
+            "description": "Use capslock as kor-eng switch (ctrl + space)",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "spacebar",
+                            "modifiers": [
+                                "control",
+                                "left_shift"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}

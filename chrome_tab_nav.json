@@ -1,0 +1,56 @@
+{
+    "title": "Use right command, option as chrome tab navigation",
+    "rules": [
+        {
+            "description": "Use right command and right option as chrome tab navigation",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "identifiers": [
+                                {
+                                    "is_keyboard": true,
+                                    "vendor_id": 1452
+                                }
+                            ],
+                            "type": "device_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "right_command"
+                    },
+                    "to": [
+                        {
+                            "key_code": "tab",
+                            "modifiers": ["control"]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "identifiers": [
+                                {
+                                    "is_keyboard": true,
+                                    "vendor_id": 1452
+                                }
+                            ],
+                            "type": "device_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "right_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "tab",
+                            "modifiers": ["control", "shift"]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
